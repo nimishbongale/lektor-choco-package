@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>lektor</id>
+    <version>3.2.0</version>
+    <packageSourceUrl>https://github.com/lektor/lektor</packageSourceUrl>
+    <owners>The Lektor Team</owners>
+
+    <title>lektor</title>
+    <authors>Nimish Bongale</authors>
+    <projectUrl>https://www.getlektor.com/</projectUrl>
+    <iconUrl>https://www.getlektor.com/static/favicon.png</iconUrl>
+    <copyright>2015 Armin Ronacher</copyright>
+    <licenseUrl>https://www.getlektor.com/license/</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    
+    <projectSourceUrl>https://github.com/lektor/lektor</projectSourceUrl>
+    <docsUrl>https://www.getlektor.com/docs/</docsUrl>
+    <bugTrackerUrl>https://github.com/lektor/lektor/issues</bugTrackerUrl>
+    <tags>python virtualenv cms</tags>
+    <summary>lektor</summary>
+    <description>The lektor static file content management system</description>
+
+    <dependencies>
+      <dependency id="ffmpeg" version="4.1.5"/>
+      <dependency id="imagemagick" version="6.8.4"/>
+      <dependency id="python" version="3.5.3"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

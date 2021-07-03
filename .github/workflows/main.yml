@@ -1,0 +1,35 @@
+on: push
+
+jobs:
+  Run-Package-Pack-Install:
+    runs-on: windows-latest
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+      -
+        name: Checkout Main Branch
+        uses: actions/checkout@v2
+      - run: echo "The ${{ github.repository }} repository has been cloned to the runner"
+      -
+        name: choco pack
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: pack
+      - run: echo "Job status post-pack ${{ job.status }}."
+      -
+        name: choco install dependencies
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: install ffmpeg imagemagick python
+      - run: echo "Job status post-dependency-install ${{ job.status }}."
+      - 
+        name: choco install lektor -fdv
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: install -fdv lektor.3.2.0.nupkg
+      - run: echo "Job status post-install ${{ job.status }}."
+      - 
+        name: choco uninstall lektor
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: uninstall lektor
+      - run: echo "Job status post-uninstall ${{ job.status }}."

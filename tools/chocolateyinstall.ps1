@@ -1,0 +1,1 @@
+﻿python tools/installer.py
