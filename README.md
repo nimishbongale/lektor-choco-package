@@ -1,9 +1,10 @@
 ﻿# Lektor Chocolatey Package
 
-![https://img.shields.io/badge/hosted%20on-chocolatey-brown](https://img.shields.io/badge/hosted%20on-chocolatey-brown)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![https://img.shields.io/badge/version-v3.2.0-lightgreen](https://img.shields.io/badge/version-v3.2.0-lightgreen)](https://chocolatey.org/packages/lektor)
+[![https://img.shields.io/badge/hosted%20on-chocolatey-brown](https://img.shields.io/badge/hosted%20on-chocolatey-brown)](https://chocolatey.org/packages/lektor)
 ![https://img.shields.io/chocolatey/dt/lektor](https://img.shields.io/chocolatey/dt/lektor)
-![https://img.shields.io/github/workflow/status/nimishbongale/lektor-choco-package/main](https://img.shields.io/github/workflow/status/nimishbongale/lektor-choco-package/main)
+![https://img.shields.io/github/workflow/status/nimishbongale/lektor-choco-package/main/main](https://img.shields.io/github/workflow/status/nimishbongale/lektor-choco-package/main/main)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 
 Lektor "Chocolatey" Package is a community driven package for installing and running the [Lektor CMS](https://www.getlektor.com/) on Windows. 
@@ -37,8 +38,8 @@ choco uninstall lektor
 To run the package from this repository directly, run these commands:
 
 ```powershell
-git clone https://github.com/nimishbongale/chocolatey-lektor-package.git
-cd chocolatey-lektor-package
+git clone https://github.com/nimishbongale/lektor-choco-package.git
+cd lektor-choco-package
 choco pack
 choco install -fdv lektor.<version>.nupkg 
 ```
