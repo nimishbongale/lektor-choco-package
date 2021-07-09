@@ -1,7 +1,8 @@
+name: lektor-choco-package-test
 on: push
 
 jobs:
-  Run-Package-Pack-Install:
+  Run-Package-Pack-Install-Uninstall:
     runs-on: windows-latest
     steps:
       - run: echo "Job running on a ${{ runner.os }} server"
