@@ -3,7 +3,7 @@
 [![https://img.shields.io/badge/version-v3.2.0-lightgreen](https://img.shields.io/badge/version-v3.2.0-lightgreen)](https://chocolatey.org/packages/lektor)
 [![https://img.shields.io/badge/hosted%20on-chocolatey-brown](https://img.shields.io/badge/hosted%20on-chocolatey-brown)](https://chocolatey.org/packages/lektor)
 ![https://img.shields.io/chocolatey/dt/lektor](https://img.shields.io/chocolatey/dt/lektor)
-![https://img.shields.io/github/workflow/status/nimishbongale/lektor-choco-package/main/main](https://img.shields.io/github/workflow/status/nimishbongale/lektor-choco-package/main/main)
+![https://img.shields.io/github/workflow/status/nimishbongale/lektor-choco-package/lektor-choco-package-test](https://img.shields.io/github/workflow/status/nimishbongale/lektor-choco-package/lektor-choco-package-test)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 
